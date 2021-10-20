@@ -1,5 +1,5 @@
 <h3>Вход</h3>
-<form action="/php-framework-master/account/login" method="post">
+<form action="<?php echo ROOT?>account/login" method="post">
 	<p style="color:red"><?php if(isset($error)) echo $error; ?></p>
 
 	<p>Логин</p>

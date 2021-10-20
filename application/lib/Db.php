@@ -40,8 +40,6 @@ class Db {
     //login :: root | pass :: root
 
     $this->db->exec($r);
-
-
   }
 
   public function row($sql, $params = []) {

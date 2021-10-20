@@ -23,9 +23,10 @@ class Router {
 
     public function match() {
 
-        $name_fail = strlen('php-fremwork-master/')+1;
+        $name_fail = strlen('Feedback_System/')+1;
+
         $url = trim(substr($_SERVER['REQUEST_URI'] , $name_fail) , '/');
- 
+
 
         foreach ($this->routes as $route => $params) {
             if (preg_match($route, $url, $matches)) {

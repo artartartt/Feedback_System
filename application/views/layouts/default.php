@@ -12,7 +12,7 @@
 			<a href="<?php echo ROOT; ?>account/comment">Comment</a>
 		</li>
 		<li>
-			<a href="<?php echo ROOT; ?>account/login"><?php if(isset($_SESSION['admin'])) echo 'Log Out'; else echo 'Login'?></a>
+			<a href="<?php echo ROOT; ?>account/login"><?php if(isset($_SESSION['admin'])) echo 'Admin Log Out'; else echo 'Login'?></a>
 		</li>
 
 	</ul>
