@@ -13,7 +13,7 @@ spl_autoload_register(function($class) {
         require $path;
     }
 });
-
+var_daamp('test');
 session_start();
 
 $router = new Router;
