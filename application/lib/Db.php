@@ -33,13 +33,13 @@ class Db {
     $this->db->exec($creat_db);
     $this->db->exec("CREATE TABLE IF NOT EXISTS ".DB_NAME.".".DB_TABLE_COMMENT."(".$comments_table.")");
     $this->db->exec("CREATE TABLE IF NOT EXISTS ".DB_NAME.".".DB_TABLE_LOGIN."(".$login_table.")");
-    $r = "USE contacts_for_user;INSERT INTO `login` (`login`, `password`) VALUES
+    $root_config = "USE contacts_for_user;INSERT INTO `login` (`login`, `password`) VALUES
 ('admin', '21232f297a57a5a743894a0e4a801fc3'),
 ('root', '63a9f0ea7bb98050796b649e85481845')";
     //login :: admin | pass :: admin
     //login :: root | pass :: root
 
-    $this->db->exec($r);
+    $this->db->exec($root_config);
   }
 
   public function row($sql, $params = []) {
