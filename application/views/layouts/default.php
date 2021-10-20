@@ -14,9 +14,7 @@
 		<li>
 			<a href="<?php echo ROOT; ?>account/login"><?php if(isset($_SESSION['admin'])) echo 'Log Out'; else echo 'Login'?></a>
 		</li>
-<!--		<li>-->
-<!--			<a href="--><?php //echo ROOT; ?><!--account/register">Register</a>-->
-<!--		</li>-->
+
 	</ul>
 	<?php echo $content; ?>
 </body>
