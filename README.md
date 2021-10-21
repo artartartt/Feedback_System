@@ -5,3 +5,4 @@ ays pahin
 3` sarqace admini ej@ ete aranc login/paroli pordi mutq gorci chi toxnum 
 4` admin@ karoxanume jnjel commentner
 5` ete db chka inq@ sarqum e
+6` saytin avelacrel em ejeri hamarakalum (ham admin@ hamel hyur@)
