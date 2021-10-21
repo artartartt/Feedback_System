@@ -16,9 +16,11 @@
 
       <?php endforeach; ?>
 		</div>
+		<br>
 		<input id="where_clicked" name="where_clicked" type="text" value="" hidden>
-
-
+    <?php for ($i = 0; $i < $page_id; $i++): ?>
+			<a style="font-size: 50px;" href=<?php echo ROOT."account/admin/".($i+1); ?> ><?php echo $i+1; ?></a>
+    <?php endfor ?>
 	</form>
 </div>
 

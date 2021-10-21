@@ -7,27 +7,31 @@ use application\lib\Settings;
 use application\models\Comment;
 use application\models\Login;
 use application\models\Admin;
+use application\models\Main;
 
-
-//mnac login sharunakem u mutq grem
 
 class AccountController extends Controller {
-
 
   public function adminAction(){
     $result = new Admin;
     $setting = new Settings();
+    $Models_Main = new Main();
 
     $all_vars = $result->comments_for_admin();
-//    array_push($all_vars,$result->del_comment());
+    $count_id = (int)trim( $_GET['id'],'account/admin' );
+    $result_page_count = $Models_Main->db_comments_count();
+
+    if($count_id <= 0 || $count_id > $result_page_count){
+      header('Location: '.ROOT."account/admin/1");
+    }
     $vars = [
       'news' => $all_vars,
+      'page_id' => $result_page_count,
     ];
     $this->view->render('Admin page', $vars);
     $setting->del_element();
 
   }
-
 
 	public function loginAction() {
     if(isset($_SESSION['admin'])){
