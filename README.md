@@ -5,6 +5,7 @@ http://localhost/Feedback_System/ fayler@ petqe dasavorvac linen ays hertakanuty
 vorpesi asxati application/config/db.php petqa greq der db-i login parol@ ev verj
 
 ays pahin 
+
 1` karuma hyur@ gri comment
 
 2` cuyca talis bolor commentner@ 
