@@ -1,19 +1,22 @@
 22.10.2021,  14:50
 
-http://localhost/Feedback_System/ fayler@ petqe dasavorvac linen ays hertakanutyamb
+Necessary conditions
 
-vorpesi asxati application/config/db.php petqa greq der db-i login parol@ ev verj
+1. files should be arranged like this: http://localhost/Feedback_System/
 
-ays pahin 
+2. application/config/db.php modify db data
 
-1` karaxanuma hyur@ gri comment
 
-2` cuyca talis bolor commentner@ 
+At this moment
 
-3` sarqace admini ej@ ete aranc login/paroli pordi mutq gorci chi toxnum 
+1` The guest can add a comment
 
-4` admin@ karoxanume jnjel commentner
+2` Show all comments
 
-5` ete db chka inq@ sarqum e
+3` Create an administrator page (does not allow access without login)
 
-6` saytin avelacrel em ejeri hamarakalum (ham admin@ hamel hyur@)
+4` Admin can delete comments
+
+5` CREATE DATABASE IF NOT EXISTS
+
+6` Pagination for admin and user
