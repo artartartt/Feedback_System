@@ -6,7 +6,7 @@ vorpesi asxati application/config/db.php petqa greq der db-i login parol@ ev ver
 
 ays pahin 
 
-1` karuma hyur@ gri comment
+1` karaxanuma hyur@ gri comment
 
 2` cuyca talis bolor commentner@ 
 
