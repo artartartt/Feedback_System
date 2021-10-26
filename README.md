@@ -1,8 +1,22 @@
-20:10:2021  14:50
-ays pahin 
-1` karuma hyur@ gri comment
-2` cuyca talis bolor commentner@ 
-3` sarqace admini ej@ ete aranc login/paroli pordi mutq gorci chi toxnum 
-4` admin@ karoxanume jnjel commentner
-5` ete db chka inq@ sarqum e
-6` saytin avelacrel em ejeri hamarakalum (ham admin@ hamel hyur@)
+25.10.2021,  12:50
+
+Necessary conditions
+
+1. files should be arranged like this: http://localhost/Feedback_System/
+
+2. application/config/db.php modify db data
+
+
+At this moment
+
+1` The guest can add a comment
+
+2` Show all comments
+
+3` Create an administrator page (does not allow access without login)
+
+4` Admin can delete comments
+
+5` CREATE DATABASE IF NOT EXISTS
+
+6` Pagination for admin and user
