@@ -2,18 +2,17 @@
 //mi tarberakel ka es jnjem sra tex@ tanem en mi tarberakov (regexp-ov) anem
 //et depqum id-n  karam stanam tvov esa tesnem nor anem
 return [
-  //main Controller
+  //account Controller
 	'' => [
-		'controller' => 'main',
-		'action' => 'index',
+		'controller' => 'account',
+		'action' => 'comment',
 	],
 
   '[0-9-]+' => [
-    'controller' => 'main',
-    'action' => 'index',
+    'controller' => 'account',
+    'action' => 'comment',
   ],
 
-  //account controller
 	'account/comment' => [
 		'controller' => 'account',
 		'action' => 'comment',

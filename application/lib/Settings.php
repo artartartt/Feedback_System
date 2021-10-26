@@ -21,25 +21,25 @@ class Settings {
         'lastname' => $lastname,
         'email' => $email,
         'text' => $text,
-        'error' => 'Stugvac',
+        'error' => '',
       ];
 
       if (strlen($name) < 3) {
-        $all_posts['error'] = "Error name";
-        return $all_posts;
-      }
-      if (strlen($lastname) < 3) {
-        $all_posts['error'] = "Error lastname";
-        return $all_posts;
+        $all_posts['error'] .= "Error name <br>";
 
       }
+      if (strlen($lastname) < 3) {
+        $all_posts['error'] .= "Error lastname <br>";
+      }
       if (strlen($email) < 7) {
-        $all_posts['error'] = "Error email";
-        return $all_posts;
+        $all_posts['error'] .= "Error email <br>";
 
       }
       if (strlen($text) < 10) {
-        $all_posts['error'] = "Error text";
+        $all_posts['error'] .= "Error text <br>";
+      }
+      if($all_posts['error'] == ""){
+        $all_posts['error'] = 'Stugvac';
       }
       return $all_posts;
 

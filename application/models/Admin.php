@@ -13,9 +13,12 @@ class Admin extends Model {
   }
 
   public function del_comment($element_deleting){
-
-    $stmt = $this->db->query(  "DELETE FROM ".DB_NAME.".".DB_TABLE_COMMENT." WHERE id = ".$element_deleting);
-    return $stmt;
+    if(isset($_SESSION['admin']) && $_SESSION['admin'] == "asd1dqd1da1dihdYUGDYUfgVSHDVhadvsghDG" ){
+      $stmt = $this->db->query("DELETE FROM " . DB_NAME . "." . DB_TABLE_COMMENT . " WHERE id = " . $element_deleting);
+      return $stmt;
+    }
+    else
+      return false;
 
   }
 }

@@ -2,8 +2,6 @@
 
 return [
 	'all' => [
-		'index',
-    'page'
 
 	],
 

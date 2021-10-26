@@ -23,3 +23,7 @@ class MainController extends Controller {
   }
 
 }
+
+
+//ind petqa main-i glxavor ej@ poxel feedback_System-i mej petqa comment grel
+//stugem vor ete avtorizacia ancac chi ctoxi jnjem

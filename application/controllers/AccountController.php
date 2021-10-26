@@ -28,6 +28,7 @@ class AccountController extends Controller {
       'news' => $all_vars,
       'page_id' => $result_page_count,
     ];
+    $this->view->layout = 'admin_page';
     $this->view->render('Admin page', $vars);
     $setting->del_element();
 
@@ -41,7 +42,7 @@ class AccountController extends Controller {
     $login = new Settings();
     $result = $login->admin_login($all_posts);
       if(is_array($result) && count($result) == 1){
-        $_SESSION['admin'] = true;
+        $_SESSION['admin'] = 'asd1dqd1da1dihdYUGDYUfgVSHDVhadvsghDG';
         header('Location: admin');
         exit;
       }
@@ -52,7 +53,6 @@ class AccountController extends Controller {
       else if($result['error'] == "Login or Password wrong"){
         $this->view->render('Вход',$result );
       }
-
 
   }
 
